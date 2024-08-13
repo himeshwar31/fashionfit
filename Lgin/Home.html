@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="full">
+        <div class="navbar">
+            <div class="head">
+            <h1>FASHIONFIT</h1>
+            </div>
+            <div class="about us">
+              <p class="one"> <a href="">Home</a></p>
+              <p class="one"> <a href="#col">Collection</a></p>
+              <p class="one"><a href="">contact us</a></p>
+              <i class="fa-sharp fa-solid fa-cart-shopping" id="hey" onclick="cartopen()"></i>
+            </div>
+            <div class="bar" >
+                <i class="fa-solid fa-bars" onclick="show()"></i>
+            </div>
+        </div>
+        <div class="sidenavbar">
+            <p style="text-align: right;" >
+            <i class="fa-duotone fa-solid fa-xmark" onclick="cl()" ></i>
+            </p>
+            <p class="two"><a href="">Home</a></p>
+            <a href="#col" style="text-decoration: none; color: black;"><p class="two">Collection</p></a>
+            <p class="two"><a href="">contact us</a></p>
+        </div>
+        <div class="shop">
+            <i class="fa-sharp fa-solid fa-cart-shopping" onclick="cartopen()" style=" width: 50%;"></i>
+        </div>
+       <!-- <div class="cart">
+            <p style="margin-top: 10px; margin-left: 20px;">
+            <i class="fa-duotone fa-solid fa-xmark" onclick="cartclose()"></i>
+            </p >
+            <h4 style="text-align: center;">YOUR CART</h4>
+            <p class="elem">No products in ur cart</p>
+
+        </div>-->
+        <h1 class="seller">TOP SELLER</h1>
+        <div class="top">
+        
+        
+        <div class="vijay" id="vij1" data-aos="zoom-in">
+            <img src="vijayfashionfit.jpg" class="v">
+            <h3>Majestic Man Comfort Solid Pure Cotton Long Sleeve Men Slim Fit Casual Shirt</h3>
+            <p class="p">Fabric - Crafted from pure cotton fabric, Pre-Washed for extremely soft finish and No Shrinkage Post Washing
+                Features: Sleeve: The long sleeves, Style: casual,Design: The shirt features a modern slim fit design, Collar: Spreade Collar</p>
+            <button class="by" onclick="ad(document.querySelector('#vij1 h3'))">ADD TO CART</button>
+        </div>
+        <div class="vijay" id="vij2" data-aos="zoom-in">
+            <img src="redshirt.avif" class="v">
+            <h3>Amazon Brand - Symbol Men's Cotton Rich Formal Shirt | Plain | Full Sleeve - Regular Fit</h3>
+            <p>VHigh-grade Fabric and Fine Stitching: Unwind to the feel of comfy with 100% Cotton fabric that provide good capability of tenderness, air permeability and moisture absorption</p>
+            <button class="by" onclick="ad(document.querySelector('#vij2 h3'))">ADD TO CART</button>
+        </div>
+        <div class="vijay" id="vij3" data-aos="zoom-in">
+            <img src="blue.jpg" class="v">
+            <h3>Levi's Men's Spread Collar Slim Fit Solid Shirts</h3>
+            <p>The perfect blend of comfortable fabric and a timeless design come together to create this full sleeves shirt by Levi's. With a slim fit and spread collar, it's simple yet stylish. Best of all, its pure cotton construction makes it light and soft for everyday Wear this shirt with a pair of light denim and your </p>
+            <button class="by" onclick="ad(document.querySelector('#vij3 h3'))">ADD TO CART</button>
+        </div>
+        </div>
+        <div class="car">
+            <p> Added to cart </p>
+        </div>
+        <h1 CLASS="collec" id="col"style="margin-top: 50px;">COLLECTION</h1>
+        <div class=collection>
+            <div class="shirts" >
+                <img src="shirtcollection.jpg" class="dress" data-aos="fade-down-right" >
+                <p class="txt">SHIRTS</p>
+            </div>
+            <div class="shirts"  >
+                <img src="tshirt images.jpg" class="dress"  data-aos="fade-down-left">
+                <p class="txt">T-SHIRTS</p>
+                
+            </div>
+            <div class="shirts"> <img src="pantcollection.jpg" class="dress" data-aos="fade-up-right">
+                <p class="txt">PANTS</p> 
+            </div>
+            <div class="shirts" > <img src="others1.avif" class="dress" data-aos="fade-up-left">
+                <p class="txt">OTHERS</p> 
+            </div>
+
+        </div>
+        <div class="footer"></div>
+        
+
+        
+        
+        
+    </div>
+    <div class="cart">
+        <p style="margin-top: 10px; margin-left: 20px;">
+        <i class="fa-duotone fa-solid fa-xmark" onclick="cartclose()"></i>
+        </p>
+        <h4 style="text-align: center;">YOUR CART</h4>
+        <p class="elem">No products in ur cart</p>
+        <div class="jolly" style="margin-top: 10px; margin-left: 5px; ">
+
+        </div>
+        <button class="buy">BUY NOW</button>
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="home.js"></script>
+    
+</body>
+</html>
